@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" type="image/png" href="/assets/bwlogotransparent.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content-wrap">
+    <nav class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="/assets/bwlogotransparent.png" alt="Bytewise Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Registration</h1>
+
+    <form class="selection-form">
+        <div class="plan-container">
+            <input type="radio" id="basic-plan" name="plan" hidden />
+            <label for="basic-plan" class="plan">
+                <h2>Basic Plan</h2>
+                <p>$9.99 / month</p>
+                <ul>
+                    <li>Access to interactive coding courses</li>
+                    <li>Two live tutoring sessions per week</li>
+                    <li>Access to community forums</li>
+                </ul>
+            </label>
+
+            <input type="radio" id="premium-plan" name="plan" hidden />
+            <label for="premium-plan" class="plan">
+                <h2>Premium Plan</h2>
+                <p>$19.99 / month</p>
+                <ul>
+                    <li>Access to interactive coding courses</li>
+                    <li>Five live tutoring sessions per week</li>
+                    <li>Access to community forums</li>
+                    <li>Specialized tutoring</li>
+                </ul>
+            </label>
+        </div>
+
+        <div class="form-inputs">
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Enter your password" required>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+
+    <div class="footer">
+        By Miles Burkart. This is not a real business, just a project for ENC 1210.
+    </div>
+
+</body>
+</html>

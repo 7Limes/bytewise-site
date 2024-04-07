@@ -1,0 +1,64 @@
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #232a33;
+    
+    padding: 20px;
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    font-size: 15px;
+}
+
+.plan:hover, .plan:focus-within {
+    transform: scale(1.05);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    border: 1px solid white;
+}
+
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.form-inputs input[type="email"], .form-inputs input[type="password"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    color: lightgray;
+    background-color: #3e4959;
+}
+
+.form-inputs button {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-inputs button:hover {
+    background-color: rgb(78, 78, 78);
+}
